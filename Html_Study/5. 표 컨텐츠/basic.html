@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        table{
+            width: 500px;
+            height: 500px;
+            border : 1px solid black;
+            border-collapse:collapse;
+        }
+        td {
+
+            border : 1px solid black;
+        }
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <tr> <!-- table의 자식태그 tr은 표의 행을 나타냅니다.-->
+        <td>이름</td> <!--tr의 자식테그 td는 한행에 들어갈 열(칸)을 나타냅니다.-->
+        <td>나이</td>
+        <td>성별</td>
+        <td>주소</td>
+        <td rowspan="5" align="center">
+            <button>세로버튼</button>
+        </td>
+      </tr>
+      <tr> <!-- table의 자식태그 tr은 표의 행을 나타냅니다.-->
+        <td>이름</td> <!--tr의 자식테그 td는 한행에 들어갈 열(칸)을 나타냅니다.-->
+        <td>나이</td>
+        <td>성별</td>
+        <td>주소</td>
+      </tr>
+      <tr> <!-- table의 자식태그 tr은 표의 행을 나타냅니다.-->
+        <td>이름</td> <!--tr의 자식테그 td는 한행에 들어갈 열(칸)을 나타냅니다.-->
+        <td>나이</td>
+        <td>성별</td>
+        <td>주소</td>
+     <tr>
+        <td>박영희</td>
+        <td>24</td>
+        <td>야지</td>
+        <td>경기도 성남시</td>
+        </tr>
+      </tr>
+      <tr>
+        <!-- 가로셀 병합 : colspan 병합하고자 하는 셀의 개수를지정 -->
+        <td colspan="4" align="center">
+            <button>버튼입니다.</button>
+        </td>
+      </tr>
+
+    </table>
+  </body>
+</html>
