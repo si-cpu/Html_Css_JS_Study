@@ -1,0 +1,10 @@
+@import "./side.css"
+
+/* 
+  다른 스타일 스트에서 또다른 스타일을 불러올때 사용하는 문법
+*/
+
+h1, p {
+    color: antiquewhite;
+    background-color: bisque;
+}
