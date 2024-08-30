@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+    <title>Document</title>
+
+    <style>
+        .fruits>li:nth-child(3){
+            color: bisque;
+        }
+        .fruits>li:nth-child(even){
+            color:brown;
+        }
+        .fruits>li:nth-child(odd){
+            color: aquamarine;
+        }
+        /* n 키워드 사용시 0부터 작용함.*/
+        .fruits>li:nth-child(3n+1){
+            color: rgb(221, 101, 201);
+        }
+        /* .food의 첫번째 자식이 p가 아니기 떄문에 지목해서 스타일을 지정할 수 없습니다.
+        따라서 :nth-child()대신에 :nth-of-type()을 사용해서 스타일을 지정한다.*/
+        .food>p:nth-of-type(){
+            font-style: italic;
+        }
+        .boxGroup>div:nth-last-child(3){
+            color: red;
+        }
+
+        .fruits>li:not(.mango){
+            list-style: none;
+        }
+    </style>
+    
+
+<body>
+    <ul class="fruits">
+        <li>딸기</li>
+        <li>사과</li>
+        <li>오렌지</li>
+        <li class="mango">망고</li>
+        <li>바나나</li>
+        <li>복숭아</li>
+        <li>파인애플</li>
+    </ul>
+    <hr>
+    <div class="food">
+        <div>짜장면</div>
+        <p>짬뽕</p>
+        <p>닭강정</p>
+        <span>짬뽕</span>
+    </div>
+
+    <hr>
+    <div class="boxGroup">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+            <div>3-1</div>
+            <div>3-2</div>
+            <div>3-3</div>
+    </div>
+
+
+</body>
+</html>

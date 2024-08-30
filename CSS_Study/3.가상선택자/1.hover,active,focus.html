@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        a:hover{
+            font-size: 24px;
+            font-weight: bold ;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+        .box:hover{
+            width: 200px;
+            transition: 0.5s;
+        }
+        .box:active{
+            width: 300px;
+            background: yellow;
+        }
+        input{
+            width: 100px;
+            border: 1px solid gray;
+            outline: none;
+            transition: 1s;
+
+        }
+        input:focus{
+            border-color: red;
+            width: 200px;
+
+        }
+    </style>
+  </head>
+  <body>
+    <a href="https://google.com">구글로 이동!</a>
+    <div class="box"></div>
+
+    <br />
+
+    <input type="text" />
+  </body>
+</html>
