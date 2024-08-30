@@ -4,8 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      table{
+          width: 500px;
+          height: 500px;
+          border : 1px solid black;
+          border-collapse:collapse;
+      }
+      td {
+
+          border : 1px solid black;
+      }
+  </style>
   </head>
   <body>
-
+    <table>
+      <tr>
+        <td colspan="3" align="center">공연요금</td>
+      </tr>
+      <tr>
+        <td>구분</td>
+        <td>S석</td>
+        <td>VIP</td>
+      </tr>
+      <tr>
+        <td>성인</td>
+        <td>50,000원</td>
+        <td>70,000원</td>
+      </tr>
+      <tr>
+        <td>청소년</td>
+        <td>40,000원</td>
+        <td>60,000원</td>
+      </tr>
+      <tr>
+        <td>소인</td>
+        <td colspan="2">미취학 아동 일반 요금의 50%</td>
+      </tr>
+      <tr aria-rowspan="2"></tr>
+        <td>공연시간</td>
+        <td>1</td>
+        <td>60,000원</td>
+      </tr>
+      <tr> 
+      <td>1회</td>
+      <td>2회</td>
+    </tr>
+    </table>
   </body>
 </html>
